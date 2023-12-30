@@ -6,7 +6,7 @@ import numpy as np
 from transformers import AutoModelForImageClassification, TrainingArguments, Trainer
 
 
-data = load_dataset("TrieuNguyen/TrieuNguyen/chest-xray")
+data = load_dataset("TrieuNguyen/chest-xray")
 
 # Labels function
 labels = data["train"].features["label"].names
